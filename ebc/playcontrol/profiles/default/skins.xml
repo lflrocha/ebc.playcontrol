@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="EBC PlayControl">
+
+ <object name="playcontrol_skin_assets"
+    meta_type="Filesystem Directory View"
+    directory="ebc.playcontrol:skins/playcontrol_skin_assets"/>
+ <object name="playcontrol_skin_templates"
+    meta_type="Filesystem Directory View"
+    directory="ebc.playcontrol:skins/playcontrol_skin_templates"/>
+
+ <skin-path name="EBC PlayControl" based-on="Sunburst Theme">
+  <layer name="playcontrol_skin_assets"
+     insert-after="custom"/>
+  <layer name="playcontrol_skin_templates"
+     insert-after="playcontrol_skin_assets"/>
+ </skin-path>
+
+</object>

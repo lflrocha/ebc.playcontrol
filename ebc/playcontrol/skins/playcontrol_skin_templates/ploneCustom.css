@@ -1,0 +1,297 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: #145628;
+  line-height: 1.5em;
+}
+
+
+#portal-header {
+  text-align: center;
+}
+
+#portal-logo {
+  margin: 1.2em 0 0 0;
+  position: relative;
+  left: 2em;
+}
+
+#content {
+  min-height: 450px;
+  color: #000;
+}
+
+#content a:visited, dl.portlet a:visited {
+  color: #145628;
+}
+
+#portal-globalnav ul.submenu a,
+#portal-globalnav ul.submenu a:hover {
+  border-top: 1px solid white;
+}
+
+#portal-globalnav li.selected ul.submenu a:hover {
+  background-color: #145628;
+}
+
+ul.submenu {
+  width: auto;
+  border-color: White;
+  border-width: 1px;
+  border-style: none none solid none;
+}
+
+#portal-globalnav {
+  background-color: #145628;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+#portal-globalnav-ul {
+  margin: 0 auto;
+  display: table;
+}
+
+#portal-globalnav-ul {
+    margin: 0 auto;
+    display: table;
+}
+
+#portal-globalnav li {
+  display: inline;
+}
+
+#portal-globalnav li a {
+  display: inline-block;
+  background-color: #145628;
+  border: none;
+  font-weight: bold;
+  padding: 0.7em 1em;
+  text-transform: uppercase;
+  white-space: normal;
+  color: White;
+  line-height: 1.5em;
+  min-width: 13em;
+}
+
+#portal-globalnav li a:hover,
+#portal-globalnav ul li a.hasChildrens:hover {
+  background-color: #1f452b;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover {
+  background: none repeat scroll 0 0 #058236;
+  color: #ffffff;
+}
+
+#portal-globalnav li.selected ul li a {
+  background-color: #058236;
+  color: #fff;
+}
+
+#portal-globalnav .state-published {
+  color: #fff !important;
+}
+
+.template-index_capa #portal-breadcrumbs,
+.template-index_interna #portal-breadcrumbs {
+  display: none;
+}
+
+.template-index_capa #portal-column-content {
+  background-image: url('bg-index.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -16px;
+}
+
+.template-index_interna #portal-column-content {
+  background-image: url('bg-index.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -16px;
+}
+
+.conteudoFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: strech;
+  align-content: space-around;
+  width: 55%;
+  margin: 7% auto;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+
+
+.conteudoFlex>div ul li {
+  list-style: none;
+  margin: 10px 30px;
+  text-align: center;
+}
+
+.conteudoFlex>div ul li a:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.linha_flex {
+  width: 100%;
+  color: #fff;
+}
+
+.linha_foto {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.linha_flex ul {
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.template-index_capa .linha_flex,
+.template-index_interna .linha_flex {
+  color: #fff;
+  padding-top: 1.5em;
+}
+
+.template-index_interna .conteudoFlex {
+  width: 70%;
+  margin: 7% auto;
+}
+
+
+
+
+
+
+
+
+/* ESTILOS GERAIS */
+.center {
+  text-align: center;
+}
+
+#left {
+  float: left;
+  margin-left: 10%;
+  width: 35%;
+}
+
+#right {
+  float: right;
+  margin-right: 10%;
+  width: 35%;
+}
+
+#left p, #right p {
+  padding-left: 1em;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #145628;
+}
+
+.titulo-portlet {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2em;
+  color: #145628;
+}
+
+a:link, a:visited {
+  color: #145628;
+}
+
+#content input,
+#content .label,
+#content select,
+#content label {
+  font-size: 120%;
+}
+
+#content .required {
+  font-size: 70%;
+}
+
+
+/* BARRA LATERAL */
+div.botaoPortlet {
+  background: none repeat scroll 0 0 #145628;
+  border-radius: 0em;
+  font-size: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  text-align: center;
+  color: white !important;
+}
+
+div.botaoPortlet:hover {
+  background-color: #058236;
+  color: white !important;
+}
+
+div.botaoPortlet a {
+  color: white !important;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+div.botaoPortlet a:visited {
+  color: fff !important;
+}
+
+/* Lista de solicitacoes */
+#content a:link, dl.portlet a:link {
+  border-bottom: 0 solid #ccc;
+  color: #2d2d2d;
+}
+
+#content a:hover, dl.portlet a:hover {
+  border-bottom: 0 solid #ccc;
+  color: #145628 !important;
+}
+
+.template-atct_edit #content {
+  background-color: #FFFFFF;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  padding: 20px;
+}
+
+#edit-bar {
+  background-color: #dddddd;
+  border: 0.25em solid #dddddd;
+  border-style: solid solid none;
+}
+
+#content-views {
+  background-color: #dddddd;
+}

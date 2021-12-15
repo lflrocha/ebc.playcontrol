@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="ebc.playcontrol">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".estatica.Estatica">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IEstatica"
+        />
+  </class>
+  <class class=".destaques.Destaques">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IDestaques"
+        />
+  </class>
+  <class class=".destaquevideo.DestaqueVideo">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IDestaqueVideo"
+        />
+  </class>
+
+</configure>

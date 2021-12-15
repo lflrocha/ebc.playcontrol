@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+           tal:define="dummy python:request.set('disable_border',1)" />
+
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Oxygen|Yanone+Kaffeesatz:300" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,700" rel="stylesheet">
+</head>
+
+
+<body>
+
+<metal:main fill-slot="main">
+
+<div id="capa">
+
+</div>
+
+<div class="conteudoFlex">
+<div class="linha_flex" tal:define="itens context/listFolderContents">
+   <div class="linha_foto">AGUARDANDO GERAÇÃO</div>
+    <ul>
+        <li tal:repeat="item itens"><span tal:content="item/Title" /><br><span tal:content="python:context.getPendentes(item.id)" /></li>
+    </ul>
+</div>
+
+</div>   <!-- fecha conteudoFlex -->
+
+
+</metal:main>
+
+</body>
+</html>
